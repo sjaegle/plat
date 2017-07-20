@@ -3,7 +3,7 @@ package edu.uri.cs.gwt.plat.client;
 import com.google.gwt.core.client.JavaScriptObject;
 
 public class AtomTuple extends JavaScriptObject {
-	// GWT overlay types always have protected, zero argument constructors.
+	// GWT overlay types: protected, zero argument constructors.
 	protected AtomTuple() {};
 	
 	// JSNI methods to get atom tuple data.
