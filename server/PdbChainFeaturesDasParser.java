@@ -20,7 +20,6 @@ import javax.xml.validation.SchemaFactory;
 
 public class PdbChainFeaturesDasParser {
 	
-	//DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	SAXParserFactory parserFactory;
 	SAXParser parser;
 	SchemaFactory schemafactory;
@@ -39,7 +38,6 @@ public class PdbChainFeaturesDasParser {
 	ArrayList<String> dsspSymbols;
 	
 	String dasRetrievalBaseUrl = "http://pdb.rcsb.org/pdb/rest/das/pdbchainfeatures/features?segment=";
-	//String dasDtdUrlString = "http://www.rcsb.org/pdb/rest/das/pdbchainfeatures/dasgff.dtd";
 	
 	// constructor 
 	public PdbChainFeaturesDasParser(String file, String chain) throws Exception {

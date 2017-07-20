@@ -126,27 +126,11 @@ public class PdbChainSequenceDsspFetcher extends HttpServlet {
 				secStructureSymbol = " ";
 			else
 			    secStructureSymbol = secStructureSymbols.substring(secStrucSymbolIndex, secStrucSymbolIndex+1);
-			
-			// TODO
-			/*
-			Map<String,String> sec = aaGroup.getSecStruc();
-			*/
+
 			
 			atomList = group.getAtoms();
 			Iterator<Atom> atomListItr = atomList.iterator();
-			/*
-			while (atomListItr.hasNext()) {
-				Atom atom = atomListItr.next();
-				String atomName = atom.getName();
-				String pdbSerial = Integer.toString(atom.getPDBserial());
-				String[] atomTuple = new String[5];
-				atomTuple[0] = secStructureSymbol;
-				atomTuple[1] = seqPos;
-				atomTuple[2] = aaSymbol;
-				atomTuple[3] = atomName;
-				atomTuple[4] = pdbSerial;
-				atomAcidTuples.add(atomTuple);
-			*/	
+
 			int atomListSize = atomList.size();
 			for (int i = 0; i < atomListSize; i++) {
 				Atom atom = atomList.get(i);
@@ -164,22 +148,6 @@ public class PdbChainSequenceDsspFetcher extends HttpServlet {
 
 
 			} // end for iteration over atoms
-
-			/* properties don't return anything
-			Map<String, Object> testGroupProps = testGroup.getProperties();
-			Set<String> keys = testGroupProps.keySet();
-			System.out.println("got the keys");
-			String[] keyStrings = null;
-			if (!keys.isEmpty()) {
-				keyStrings = (String[]) keys.toArray();
-				System.out.println("got the keystrings");
-				System.out.println("keyStrings.length = " + keyStrings.length);
-			} else { System.out.println("no keystrings to be had"); }
-			String keyNames = "";
-			for (int i=0; i < keyStrings.length; i++) {
-				keyNames += keyStrings[i] + ", ";
-			}
-			*/
 
 		} // end while iteration over amino groups
 		System.out.println("aminoAcidsStr = " + aminoAcidsStr);
