@@ -30,32 +30,6 @@ public class DisplayGeneratedModelPanel extends Composite implements
 	                 "Backbone model 1)";
 	    
 	    System.out.println(jmolButton1Script);
-		/*
-		HTML html = new HTML(
-			        "<form><object width=\"500\" height=\"500\" type=\"application/x-java-applet\""
-			        + "id=\"jmolApplet0\" name=\"jmolApplet0\">"
-			        + "<param name=\"code\" value=\"jmol/JmolAppletSigned0\" />"
-			        + "<param name=\"codebase\" value=\"plat/jmol\" />"
-			        + "<param name=\"archive\" value=\"JmolAppletSigned0.jar\" />"
-			        + "<param name=\"mayscript\" value=\"true\" />"
-			        + "<param name=\"progressbar\" value=\"true\" />"
-			        + "<param name=\"progresscolor\" value=\"blue\" />"
-			        + "<param name=\"boxbgcolor\" value=\"white\" />"
-			        + "<param name=\"boxfgcolor\" value=\"black\" />"
-			        + "<param name=\"boxmessage\" value=\"Downloading JmolApplet ...\" />"
-			        + "<param name=\"java_arguments\" value=\"-Xmx512m\" />"
-			        //+ "<param name=\"script\" value=\"load files 'rot_trans.pdb'; script " + jmolButton1Script + " \" />"
-			        //+ "<param name=\"script\" value=\"load files 'rot_trans.pdb'; script color backbone red;\" />"
-			        + "<param name=\"script\" value=\"load files 'rot_trans.pdb';\" />" // successful
-			        //+ "</object>", true);
-		            + "</object>"
-		            + "<script language=\"JavaScript\" type=\"text/javascript\">"
-		            + "jmolCheckbox(\"spin on\", \"spin off\", \"spin\"); </script></form>", true);
-        */
-	    /*
-	    HTML html = new HTML("<object data=\"jmol_manualpoc.html\">"
-	    		    + "</object>");
-	    */
 	    
 	    Frame frame = new Frame("jmol_manualpoc.html");
 	    frame.setSize("700px", "700px");
