@@ -397,29 +397,6 @@ public class SequenceUIPanel extends Composite implements ClickHandler, KeyPress
 	    	displayError("Couldn't retrieve JSON");
 	    }
 
-    	
-    	/*
-       	// Initialize the service proxy if necessary
-        if (pdbSoapSvcAsync == null) {
-        	pdbSoapSvcAsync = GWT.create(PDBSoapService.class);
-        }
-
-        // Set up parallel call back objects, otherwise we would have to wait for them in sequence
-        // then when all the data is available, fill the grid
-        ParallelCallback<String> seqCallback = new ParallelCallback();
-        ParallelCallback<String> structCallback = new ParallelCallback();
-        ParentCallback parent = new ParentCallback(seqCallback, structCallback) {
-        	public void handleSuccess() {
-        		String sequenceReturned = (String)getCallbackData(0);
-        		String structReturned = (String)getCallbackData(1);
-        		fillSeqStructGrid(pdbFile, chainId, sequenceReturned, structReturned);
-        	}
-        };
-
-        // call the soap service
-        pdbSoapSvcAsync.getSequence(pdbFile, chainId, seqCallback);
-        pdbSoapSvcAsync.getKabschSanderDssp(pdbFile, chainId, structCallback);
-		*/
     } // end fetchSequenceForStructureAndChain
 
     
